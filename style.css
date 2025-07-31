@@ -1,0 +1,157 @@
+document.getElementById("chatbotBtn").addEventListener("click", function() {
+  alert("Hello! I'm the VU Admission Assistant 🤖\nHow can I help you today?");
+});
+/* style.css */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Root Variables */
+:root {
+  --primary-color: #003366;
+  --secondary-color: #f7c200;
+  --light-bg: #f9f9f9;
+  --text-color: #333;
+  --transition: 0.3s ease-in-out;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.hero {
+  background: url('https://www.vu.edu.pk/images/bg-home.jpg') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cta {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 2rem;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* Chatbot Button */
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary-color);
+  color: #000;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: var(--transition);
+}
+
+.chatbot-button:hover {
+  background-color: #e0b000;
+}
