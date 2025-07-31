@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VU Landing Page – Fall 2025 Admissions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background-color: #004f9e;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://vu.edu.pk/images/slider/admissions-banner.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #004f9e;
+    }
+    .programs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .cta {
+      background-color: #004f9e;
+      color: white;
+      padding: 3rem 2rem;
+    }
+    .cta h3 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .cta a {
+      background-color: #fff;
+      color: #004f9e;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e5e5e5;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Virtual University of Pakistan</h1>
+    <nav>
+      <a href="#about">Why VU?</a>
+      <a href="#programs">Programs</a>
+      <a href="#apply">Apply Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Admissions Open – Fall 2025</h1>
+    <p>Join Pakistan’s leading online university recognized by HEC with “W” category</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Why Choose VU?</h2>
+    <p>Flexible learning. Affordable education. Globally recognized degrees. 24/7 LMS access. Learn anywhere, anytime.</p>
+  </section>
+
+  <section class="section" id="programs">
+    <h2>Popular Programs</h2>
+    <div class="programs">
+      <div class="card"><strong>BS Computer Science</strong><br>4 Years (8 semesters)</div>
+      <div class="card"><strong>BS Business Administration</strong><br>4 Years (8 semesters)</div>
+      <div class="card"><strong>MBA (Executive)</strong><br>2 Years (4 semesters)</div>
+      <div class="card"><strong>MSc Mass Communication</strong><br>2 Years (4 semesters)</div>
+      <div class="card"><strong>Associate Degree Programs</strong><br>2 Years (4 semesters)</div>
+      <div class="card"><strong>MS Programs</strong><br>2 Years (4 semesters)</div>
+    </div>
+  </section>
+
+  <section class="cta" id="apply">
+    <h3>Apply Today – Shape Your Future with VU!</h3>
+    <a href="https://www.vu.edu.pk/apply/">Start Application</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Virtual University of Pakistan. All rights reserved.
+  </footer>
+
+</body>
+</html>
